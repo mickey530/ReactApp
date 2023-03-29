@@ -1,0 +1,45 @@
+/* #component {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  border-radius: 5px;
+  box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%),
+    0 8px 16px -8px rgb(0 0 0 / 30%), 0 -6px 16px -6px rgb(0 0 0 / 3%);
+} */
+
+#trailerDiv {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+#trailerFrame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#infoDiv {
+  padding: 10px;
+  flex-direction: column;
+  display: inline-flex;
+}
+
+#title {
+  margin: 10px 0px;
+}
+
+.score {
+  color: black;
+  font-size: 12px;
+  margin: 6px 0px;
+}
+
+.description-disable {
+  white-space: nowrap; /* 텍스트를 한 줄로 표시합니다. */
+  overflow: hidden; /* 박스를 벗어나는 부분은 잘라냅니다. */
+  text-overflow: ellipsis; /* 잘라낸 부분 대신 "..."을 표시합니다. */
+}

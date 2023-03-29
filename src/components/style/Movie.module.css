@@ -1,0 +1,70 @@
+.component {
+  display: flex;
+  padding: 5px;
+  width: 230px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* #component:hover {
+  transform: scale(1.02);
+} */
+
+@media only screen and (min-width: 560px) {
+  /* 모바일 기기가 아닐경우 hover 효과 활성화*/
+  .component:hover {
+    transform: scale(1.02);
+  }
+}
+
+a {
+  width: inherit;
+  text-decoration: none;
+  color: black;
+}
+
+.img {
+  border-radius: 10px;
+  box-shadow: 0 13px 27px -5px rgb(50 50 93 / 25%),
+    0 8px 16px -8px rgb(0 0 0 / 30%), 0 -6px 16px -6px rgb(0 0 0 / 3%);
+}
+
+.description {
+  text-align: center;
+  padding: 5px 0px;
+  width: inherit;
+}
+
+.title {
+  width: inherit;
+  margin: 0px;
+  white-space: nowrap; /* 텍스트를 한 줄로 표시합니다. */
+  overflow: hidden; /* 박스를 벗어나는 부분은 잘라냅니다. */
+  text-overflow: ellipsis; /* 잘라낸 부분 대신 "..."을 표시합니다. */
+}
+
+.score {
+  margin: 6px 0px;
+}
+
+.ulTag {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 6px 0px;
+  overflow: auto;
+}
+
+.ulTag::-webkit-scrollbar {
+  display: none;
+}
+
+.genres {
+  font-size: 12px;
+  color: lightgrey;
+  margin: 1px;
+  padding: 5px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  white-space: nowrap;
+}
